@@ -79,4 +79,4 @@ deploy-opentelemetry-collector: deploy-dash0-secret deploy-promtheus-operator-cr
 	helm upgrade --install otel-collector-deployment open-telemetry/opentelemetry-collector --namespace opentelemetry  -f ./collector/deployment-values.yaml
 
 
-deploy-all: deploy-opentelemetry-operator deploy-perses-operator deploy-mysql deploy-postgres deploy-prometheus deploy-jaeger deploy-opensearch deploy-opentelemetry-collector
+deploy-all: deploy-opentelemetry-operator deploy-perses-operator deploy-mysql deploy-postgres deploy-prometheus deploy-jaeger deploy-opensearch deploy-opentelemetry-collector deploy-k8s
